@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test frontier.test.mjs",
+    "inspect": "node frontier.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
