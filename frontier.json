@@ -1,4 +1,20 @@
 {
   "schemaVersion": "1.0.0",
-  "items": []
+  "items": [
+    {
+      "id": "emsenn-linkedin-profile-receiving-20261015",
+      "domain": "projects",
+      "lifecycle": "requires_client",
+      "sourceRef": "https://github.com/emsenn/emsenn-web-services-section/blob/main/services/emsenn-linkedin-services-section/README.md",
+      "userAction": "Review the prepared LinkedIn headline, About, and Experience descriptions; if accurate, enter the selected words manually in your LinkedIn profile and confirm the visible result. Do not share credentials or cookies.",
+      "receivingRef": "https://www.linkedin.com/in/emsenn",
+      "priority": {
+        "impact": 3,
+        "urgency": 1,
+        "attentionCost": 3,
+        "reversibility": 3
+      },
+      "context": "The external profile is already active with recent research posts. Source-owned updates are prepared; no LinkedIn profile edit or post has been executed. The provider's restrictions prohibit unauthorized assisted-browser driving. Public receiving needs actual changed profile content and emsenn's acceptance."
+    }
+  ]
 }
