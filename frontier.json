@@ -4,9 +4,8 @@
     {
       "id": "emsenn-linkedin-profile-receiving-20261015",
       "domain": "projects",
-      "lifecycle": "requires_client",
+      "lifecycle": "active",
       "sourceRef": "https://github.com/emsenn/emsenn-web-services-section/blob/main/services/emsenn-linkedin-services-section/README.md",
-      "userAction": "Review the prepared LinkedIn headline, About, and Experience descriptions; if accurate, enter the selected words manually in your LinkedIn profile and confirm the visible result. Do not share credentials or cookies.",
       "receivingRef": "https://www.linkedin.com/in/emsenn",
       "priority": {
         "impact": 3,
@@ -14,7 +13,11 @@
         "attentionCost": 3,
         "reversibility": 3
       },
-      "context": "The external profile is already active with recent research posts. Source-owned updates are prepared; no LinkedIn profile edit or post has been executed. The provider's restrictions prohibit unauthorized assisted-browser driving. Public receiving needs actual changed profile content and emsenn's acceptance."
+      "context": "The principal explicitly delegated this full outcome autonomically on 2026-10-15 and cannot devote personal attention. The older userAction was a workflow defect and has been withdrawn. The Google Drive Web Presence Work Tracker contains reported actual LinkedIn publication receipts (Oct 6, 9, 13) and the Social Media Post Production SOP now grants standing LinkedIn editorial authority; the Professional History/Profile Alignment document has corroborated career facts and an October 15 supersession addendum. LinkedIn forbids unauthorized automated browser interaction and no official current account authorization/profile-edit API is verified in this connection. Git revisions are source changes, not a live LinkedIn profile receipt.",
+      "nextAction": "Operate emsenn's LinkedIn presence without routine principal attention. Load the current Personal Services runbook, the source-owned emsenn LinkedIn service, the existing Social Media Post Production SOP section 12 and the Web Presence Work Tracker. Use the October 5 Professional History evidence master to correct prior technical-only profile copy. Check whether a lawful official member-posting API or authorized partner connection is actually configured; reuse only admitted permitted operations, never the unqualified LinkedIn browser-injection path. Select, fact-check, quality-gate, publish and verify distinct professional posts through an authorized channel; reconcile complete historical roles and correct Experience/About through an established authorized provider interface when available. Retain any unreceived profile mutation and route true integration gaps to the original Engineering owner; no user copy-paste, post-by-post sign-off or routine approval.",
+      "providerEvidence": "https://docs.google.com/spreadsheets/d/1OCXBeJFBAP2dZOv8uclfTmYWxAgLxo1ryPexaO8mm_0/edit",
+      "factualAuthority": "https://docs.google.com/document/d/16JX2GYrD4L8FZeQ3T602-A2fXuNPDRN0tXz_i5Aa-Eo/edit",
+      "workingMethod": "https://docs.google.com/document/d/1DZr52DK00DwheKkU8aIw6SdSms8SupeOmrzrnVy6bXY/edit"
     }
   ]
 }
