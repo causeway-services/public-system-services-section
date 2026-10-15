@@ -18,6 +18,19 @@ Terminal work (`done`, `canceled`, `superseded`, `abandoned`) is forbidden in th
 
 `coverage.json` records when each executive-assistant domain was last materially reviewed. A pulse must use it to inspect neglected areas instead of letting recent email or the previous conversation determine attention.
 
+## Autonomic operation and principal-attention budget
+
+The principal can delegate an outcome without volunteering routine attention. A delegation to **do the work autonomically** is an operating requirement, not an invitation to set `requires_client` because a provider interface is inconvenient.
+
+- **Zero-routine-attention rule:** for an authorized ordinary maintenance, public-presence or provider-administration duty, the service owns discovery, truthful sourcing, review under existing editorial/identity policy, choice of permitted supplier, execution, retries, receipt verification and recurrence. Do not transform preparation of copy into the principal's assigned job or repeatedly ask for approval to perform routine delegated work.
+- **Select an actual independent route:** first check provider-native APIs/permissions and already connected legitimate publishing tools; then existing owned public channels and syndication, provider-supported scheduling and authorized external services. Reuse Red Cup provider integration instead of installing client-side scripts or misusing the assisted browser. Identify per-verb capability: read, create/update profile, publish, retrieve receipt, and moderate are different grants.
+- **Platform refusals:** if an outside provider disallows the required browser automation or an account grant is absent, do not evade access restrictions, fabricate receipts, or turn an unverified workaround into live operation. Keep the original customer outcome `active` while progressing its independent permissible parts; select `waiting_external` only for a concrete external event with a wake criterion. Route reusable software gaps to Engineering through existing Work and formal qualification.
+- **Nondelegable actions only:** use `requires_client` only when an actual decision, identity/consent authorization, account secret or lawful personal act cannot be delegated or performed with existing authority. Name the exact reason and the least-demanding step, without reclassifying ordinary writing, profile-research or publication management as requiring the principal.
+- **Receiving:** source edits, drafts, repository mounts, queued messages, scheduler configuration and token possession never close an external presence requirement. An authentic provider receipt and independently observed public result close that provider step; when unavailable, report only the remaining blocked effect without pretending the whole duty was fulfilled.
+- **Attention economy:** periodically review permitted routes and newly available grants without re-probing known unchanged blocks each cycle. Surface only material outcomes, an unavoidable one-time authorization, or a serious risk; do not send recurring 'please paste this' requests.
+
+Apply this to the original client work item and the subject-owned web-presence resources, not a parallel tracker. A public-facing personal property must retain the principal's factual identity, privacy, rights and distinct customer custody.
+
 ## Run discipline
 
 1. Reconcile fresh provider/client deltas.
