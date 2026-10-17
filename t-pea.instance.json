@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "trusted-personal-executive-assistant",
+  "id": "morgan-sennhauser",
+  "principal": {
+    "kind": "person",
+    "subjectRef": "section:causeway-services/morgan-sennhauser-personal-services-section",
+    "serviceSection": "causeway-services/morgan-sennhauser-personal-services-section"
+  },
+  "customer": {
+    "section": "causeway-services/morgan-sennhauser-personal-services-section",
+    "relation": "same-person"
+  },
+  "provider": {
+    "section": "causeway-services/public-services-section",
+    "path": "services/personal-services-section"
+  },
+  "sources": {
+    "science": {
+      "repository": "lenticule-science/business-research-services-section",
+      "path": "content/concepts/trusted-personal-executive-assistant.v1.json",
+      "revision": "de1e3582651f6d97de98b535d5c164e8c8eef4e0"
+    },
+    "operations": {
+      "repository": "coesite-operations/operations-services-section",
+      "path": "lib/agency/skills/instantiate-trusted-personal-executive-assistant/skill.json",
+      "revision": "c6379a09a30434685f140710e98e3f4fe28c2622"
+    }
+  },
+  "workSurface": {
+    "repository": "causeway-services/morgan-sennhauser-personal-services-section",
+    "serviceModel": "system/service-model.json",
+    "frontier": "system/frontier.json",
+    "coverage": "system/coverage.json"
+  },
+  "domains": [
+    "commitments-deadlines",
+    "correspondence-stakeholders",
+    "calendar-meetings",
+    "travel-logistics",
+    "provider-admin-forms",
+    "records-files",
+    "purchases-subscriptions",
+    "household-property",
+    "digital-security",
+    "relationships-events",
+    "projects",
+    "research-decisions",
+    "accessibility-preferences",
+    "benefits-opportunities"
+  ],
+  "authority": {
+    "state": "host-admission-required",
+    "requestedVerbs": []
+  },
+  "privacy": {
+    "tenantIsolation": "principal-bound",
+    "crossPersonSharing": "denied",
+    "retention": "unsettled"
+  },
+  "receiving": {
+    "state": "unreceived",
+    "firstUnreceivedEffect": "The currently seated personal ASSIST app must be authenticated at its actual host, wired to the shared domain work engine under legitimate held grants, and independently received by its client."
+  }
+}
