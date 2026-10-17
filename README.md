@@ -53,3 +53,11 @@ The service model was rebuilt against executive-assistant/secretarial/chief-of-s
 node --test system/frontier.test.mjs
 node system/frontier.mjs
 ```
+
+## Source-owned T-PEA instance
+
+The [machine-readable service instance](t-pea.instance.json) binds this *existing* 14-domain frontier to the [Business Science T-PEA type](https://github.com/lenticule-science/business-research-services-section/blob/main/content/concepts/trusted-personal-executive-assistant.v1.json), [Coesite's method](https://github.com/coesite-operations/operations-services-section/blob/main/lib/agency/skills/instantiate-trusted-personal-executive-assistant/SKILL.md) and [Red Cup's generic instance admission](https://github.com/red-cup-engineering/assist/blob/main/src/tpea-instance.mjs).
+
+The descriptor requests no active verbs and grants no authority; actual identity, hosted engine, purpose, rights and exact effect scope must be admitted separately by the native provider and FeltOS. The source record currently says `receiving.state: unreceived`, consistent with the shared ASSIST roster's still-seated client host: do not conflate committed config with a deployed or independently received customer service.
+
+A second client's T-PEA must reuse these *definitions*, never copy this person's frontier, credentials, history or access. The shared T-PEA offering is held under `causeway-services/public-services-section/services/personal-services-section`, not in this private client repo.
