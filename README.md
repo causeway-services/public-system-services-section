@@ -31,6 +31,38 @@ The principal can delegate an outcome without volunteering routine attention. A 
 
 Apply this to the original client work item and the subject-owned web-presence resources, not a parallel tracker. A public-facing personal property must retain the principal's factual identity, privacy, rights and distinct customer custody.
 
+## Receive personal web presence from its actual owners
+
+The historical `web.emsenn.net` scaffold asked to surface Morgan's external
+presence, initially Kolektiva/ActivityPub and Substack, through upstream feed
+readers. It never contained an executable service. Its missing server entry,
+old port and removed serve/check/verify scripts are not a deployment design.
+The useful customer requirement is retained here as **unreceived**: authorized
+external presence must reach a real personal publication surface with source
+identity, provenance and independently observed output. Its original source
+and disposition are held by [Operations' existing custody work](https://github.com/coesite-operations/operations-services-section/issues/10#issuecomment-6251967225).
+
+Keep the actual family distinct: `emsenn/emsenn-web-services-section` composes
+personal channel sections; `emsenn/emsenn.net` carries a generated personal
+website; `emsenn/web.emsenn.net` was only the external-presence placeholder.
+These are three carriers with different roles, not three equivalent runnable
+monitors. Use the existing subject-owned channel work and this personal-service
+receiver; do not make a new tracker or copy a placeholder into another package.
+Red Cup's public-personality machinery provisions and tends constructed personas;
+it is not authority to represent this real person as a generated persona.
+
+For the existing public-presence work, first resolve the exact public account,
+permitted feed/API reader, factual and privacy authority, normalized records and
+actual personal publication consumer. Reuse qualified ActivityPub and platform
+suppliers rather than embed another scraper in the personal site. Receiving
+requires a real source item reaching that consumer, a second supported source
+or format, and a relevant refusal: unread or unavailable provider data stays
+unknown/stale and must not replace the last valid publication with an empty
+success. Reading a feed does not authorize posting or profile changes. Preserve
+provider URL and publication identity, and keep private messages outside public
+output. Until requirements, specification, design and useful receiving are
+qualified, retain the original obligation without advertising a running monitor.
+
 ## Run discipline
 
 1. Reconcile fresh provider/client deltas.
