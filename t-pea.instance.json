@@ -25,6 +25,11 @@
       "repository": "coesite-operations/operations-services-section",
       "path": "lib/agency/skills/instantiate-trusted-personal-executive-assistant/skill.json",
       "revision": "c6379a09a30434685f140710e98e3f4fe28c2622"
+    },
+    "offering": {
+      "repository": "causeway-services/public-services-section",
+      "path": "services/personal-services-section/data/records/service-offerings/trusted-personal-executive-assistance-service.json",
+      "revision": "36bc569ab2f460b189f5835914a98455a829830d"
     }
   },
   "workSurface": {
