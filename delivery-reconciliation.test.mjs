@@ -1,0 +1,28 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {reconcileOutboundAttempt as reconcile} from './delivery-reconciliation.mjs';
+const attempt={clientId:'synthetic-1',principalBound:true,sourceVerified:true,accountId:'account-1',messageId:'sent-1',recipient:'robot@example.test',sentAt:'2026-10-09T15:00:00Z'};
+const bounce={clientId:'synthetic-1',principalBound:true,adapterAuthenticated:true,accountId:'account-1',originalMessageId:'sent-1',recipient:'robot@example.test',eventAt:'2026-10-09T15:00:01Z',eventId:'dsn-1',kind:'permanent_failure',enhancedStatus:'5.1.1'};
+const alt={sourceVerified:true,providerOfficial:true,principalScope:'synthetic-1',address:'office@example.test',sourceRef:'official:1'};
+const run=(x={})=>reconcile({clientId:'synthetic-1',attempt,evidence:[bounce],alternateContacts:[alt],...x});
+test('verified 550 invalid-recipient DSN means transport failure',()=>{
+ const x=run();assert.equal(x.transport,'failed');assert.equal(x.failureRef,'dsn-1');assert.equal(x.needsNewClientAuthorizationForExternalSend,true);
+});
+test('verified alternative is a routing option only',()=>assert.deepEqual(run().alternateContacts,[{address:'office@example.test',sourceRef:'official:1'}]));
+test('Sent copy is not delivery',()=>assert.equal(run({evidence:[]}).transport,'sent_unconfirmed'));
+test('SMTP acceptance is not proof of user-visible completion',()=>assert.equal(run({evidence:[{...bounce,kind:'transport_accepted',enhancedStatus:'2.0.0'}]}).transport,'accepted_not_effect_verified'));
+test('temporary failure does not become permanent failure',()=>assert.equal(run({evidence:[{...bounce,kind:'temporary_failure',enhancedStatus:'4.2.0'}]}).transport,'unconfirmed'));
+test('rejects cross-client claims',()=>assert.throws(()=>run({clientId:'synthetic-2'}),/principal/));
+test('rejects unbound outbound attempts',()=>assert.throws(()=>run({attempt:{...attempt,sourceVerified:false}}),/principal/));
+test('rejects evidence from another account',()=>assert.throws(()=>run({evidence:[{...bounce,accountId:'account-2'}]}),/mismatch/));
+test('rejects evidence for another message',()=>assert.throws(()=>run({evidence:[{...bounce,originalMessageId:'sent-2'}]}),/mismatch/));
+test('rejects another recipient',()=>assert.throws(()=>run({evidence:[{...bounce,recipient:'other@example.test'}]}),/mismatch/));
+test('rejects unauthenticated DSN',()=>assert.throws(()=>run({evidence:[{...bounce,adapterAuthenticated:false}]}),/mismatch/));
+test('rejects evidence predating send',()=>assert.throws(()=>run({evidence:[{...bounce,eventAt:'2026-10-09T14:59:00Z'}]}),/precedes/));
+test('rejects unzoned timestamps',()=>assert.throws(()=>run({attempt:{...attempt,sentAt:'2026-10-09T15:00:00'}}),/RFC3339/));
+test('rejects SMTP mismatch',()=>assert.throws(()=>run({evidence:[{...bounce,kind:'permanent_failure',enhancedStatus:'2.0.0'}]}),/contradicts/));
+test('rejects contradictory evidence',()=>assert.throws(()=>run({evidence:[bounce,{...bounce,eventId:'accept-2',kind:'transport_accepted',enhancedStatus:'2.0.0'}]}),/contradictory/));
+test('rejects unverified alternate',()=>assert.deepEqual(run({alternateContacts:[{...alt,sourceVerified:false}]}).alternateContacts,[]));
+test('does not resend to same bounced address',()=>assert.deepEqual(run({alternateContacts:[{...alt,address:attempt.recipient}]}).alternateContacts,[]));
+test('duplicate evidence is idempotent',()=>assert.equal(run({evidence:[bounce,bounce]}).transport,'failed'));
+test('conflicting duplicate event id is rejected',()=>assert.throws(()=>run({evidence:[bounce,{...bounce,enhancedStatus:'5.2.0'}]}),/conflicting replay/));
