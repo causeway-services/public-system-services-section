@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "domains": [
+    {
+      "id": "commitments-deadlines",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "correspondence-stakeholders",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "calendar-meetings",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "travel-logistics",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "provider-admin-forms",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "records-files",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "purchases-subscriptions",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "household-property",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "digital-security",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "relationships-events",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "projects",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "research-decisions",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "accessibility-preferences",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    },
+    {
+      "id": "benefits-opportunities",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "lastMaterialChangeAt": null
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "version": "1.0.0",
+  "service": "trusted-personal-executive-assistance",
+  "target": "executive-assistant + private-chief-of-staff + personal-operations",
+  "activeLifecycle": [
+    "active",
+    "waiting_external",
+    "requires_client"
+  ],
+  "terminalLifecycle": [
+    "done",
+    "canceled",
+    "superseded",
+    "abandoned"
+  ],
+  "rules": {
+    "terminalItemsMustLeaveFrontier": true,
+    "unchangedExternalWaitsStaySilentUntilWake": true,
+    "unchangedClientGatesStaySilentUntilDeadlineNewEvidenceOrEscalation": true,
+    "statusChecksDoNotCountWithoutStateChange": true,
+    "providerNativeStateOutranksProjection": true,
+    "closedRoutineTransactionsDoNotRequireCeremonialFollowup": true
+  },
+  "domains": [
+    {
+      "id": "commitments-deadlines",
+      "reviewCadenceDays": 2
+    },
+    {
+      "id": "correspondence-stakeholders",
+      "reviewCadenceDays": 2
+    },
+    {
+      "id": "calendar-meetings",
+      "reviewCadenceDays": 3
+    },
+    {
+      "id": "travel-logistics",
+      "reviewCadenceDays": 7
+    },
+    {
+      "id": "provider-admin-forms",
+      "reviewCadenceDays": 3
+    },
+    {
+      "id": "records-files",
+      "reviewCadenceDays": 14
+    },
+    {
+      "id": "purchases-subscriptions",
+      "reviewCadenceDays": 14
+    },
+    {
+      "id": "household-property",
+      "reviewCadenceDays": 14
+    },
+    {
+      "id": "digital-security",
+      "reviewCadenceDays": 14
+    },
+    {
+      "id": "relationships-events",
+      "reviewCadenceDays": 14
+    },
+    {
+      "id": "projects",
+      "reviewCadenceDays": 7
+    },
+    {
+      "id": "research-decisions",
+      "reviewCadenceDays": 7
+    },
+    {
+      "id": "accessibility-preferences",
+      "reviewCadenceDays": 30
+    },
+    {
+      "id": "benefits-opportunities",
+      "reviewCadenceDays": 14
+    }
+  ],
+  "trainingReferences": [
+    {
+      "institution": "University College London",
+      "url": "https://www.ucl.ac.uk/career-frameworks/find-your-framework/personal-assistant-and-executive-assistants"
+    },
+    {
+      "institution": "University of Salford",
+      "url": "https://www.salford.ac.uk/spd/courses/get-ahead-executive-pa-level-3-manchester"
+    },
+    {
+      "institution": "City College of New York / CUNY",
+      "url": "https://careertraining.ccny.cuny.edu/training-programs/executive-assistant-voucher-included-objectives/"
+    },
+    {
+      "institution": "Chongqing Normal University",
+      "url": "https://zsb.cqnu.edu.cn/info/10436/88069.htm"
+    },
+    {
+      "institution": "Duke University",
+      "url": "https://forms.hr.duke.edu/descriptions/university/select.php?ID=2900"
+    }
+  ]
+}
