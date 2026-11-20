@@ -22,14 +22,14 @@
       "revision": "de1e3582651f6d97de98b535d5c164e8c8eef4e0"
     },
     "operations": {
-      "repository": "coesite-operations/operations-services-section",
-      "path": "lib/agency/skills/instantiate-trusted-personal-executive-assistant/skill.json",
-      "revision": "c6379a09a30434685f140710e98e3f4fe28c2622"
+      "repository": "coesite-operations/trusted-personal-executive-assistant-services-section",
+      "path": "lib/agency/skills/instantiate-trusted-personal-executive-assistant/SKILL.md",
+      "revision": "d09bafc7f7ebe43c6eadd92b9aedfe0a722e8170"
     },
     "offering": {
-      "repository": "causeway-services/public-services-section",
-      "path": "services/personal-services-section/data/records/service-offerings/trusted-personal-executive-assistance-service.json",
-      "revision": "36bc569ab2f460b189f5835914a98455a829830d"
+      "repository": "coesite-operations/trusted-personal-executive-assistant-services-section",
+      "path": "data/records/service-offerings/trusted-personal-executive-assistance-service.json",
+      "revision": "9d452c948a0667dc6ee654bd256362af3510cb36"
     }
   },
   "workSurface": {
